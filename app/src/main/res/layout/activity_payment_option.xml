@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.PaymentOptionActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative9"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/food"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_backspace"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="Payment Options"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cod"
+        android:layout_below="@id/relative9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/pod_button"
+        android:scaleType="center"
+        app:maxImageSize="56dp"
+        android:layout_width="200dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/relative9"
+        android:background="@drawable/button_bg"
+        android:text="Pay On Delivery"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/baloo"
+        android:textSize="22sp"
+        android:layout_marginTop="195dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"
+        android:elevation="8dp"
+        android:translationZ="10dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/payment_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/online"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pod_button"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/online_button"
+        android:scaleType="center"
+        android:layout_width="200dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/pod_button"
+        android:background="@drawable/button_bg"
+        android:text="Pay Online"
+        android:fontFamily="@font/baloo"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:elevation="8dp"
+        android:translationZ="10dp"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/razor"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T&amp;C"
+        android:layout_below="@+id/online_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+
+        />
+
+
+
+</RelativeLayout>

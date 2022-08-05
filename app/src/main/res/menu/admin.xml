@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <item android:id="@+id/admin_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item android:id="@+id/admin_add"
+        android:icon="@drawable/ic_baseline_add_box_24"
+        android:title="Add" />
+
+    <item android:id="@+id/admin_edit"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="Maintain" />
+
+    <item android:id="@+id/admin_orders"
+        android:icon="@drawable/ic_baseline_shopping_cart_25"
+        android:title="Orders" />
+
+
+
+
+</menu>

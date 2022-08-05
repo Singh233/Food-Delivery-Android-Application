@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.SettingsActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-500dp"
+        android:src="@drawable/foodbg"
+
+        />
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="2"
+        app:lottie_fileName="behindprofile.json"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/food">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="@color/topBar"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/settings_back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_backspace"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/close_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/profile_image_change_btn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/settings_profile_image"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/settings_full_name"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        app:hintTextColor="@color/topBar"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusBottomEnd="6dp"
+        app:boxStrokeColor="@color/topBar"
+
+        android:hint="@string/name"
+        app:startIconDrawable="@drawable/ic_baseline_verified_user"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/settings_full_name_input"
+
+            android:inputType="text"
+            android:maxLength="21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/settings_phone_number"
+        android:layout_below="@id/settings_full_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/topBar"
+        app:boxStrokeColor="@color/topBar"
+        app:startIconDrawable="@drawable/ic_baseline_phone"
+
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusBottomEnd="6dp"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+
+        app:prefixText="+91"
+        app:prefixTextColor="@color/topBar"
+
+        android:layout_centerHorizontal="true"
+
+
+
+        android:hint="@string/number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/settings_phone_number_input"
+
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/settings_address"
+        android:layout_below="@id/settings_phone_number"
+        app:startIconDrawable="@drawable/ic_baseline_location"
+
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomStart="6dp"
+        app:boxCornerRadiusBottomEnd="6dp"
+
+        android:layout_centerHorizontal="true"
+
+
+        app:endIconMode="clear_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/topBar"
+        app:boxStrokeColor="@color/topBar"
+        android:hint="@string/address"
+
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/settings_address_input"
+
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/update_account_settings_btn"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_address"
+        android:background="@drawable/button_bg"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"
+        android:elevation="5dp"
+        android:translationZ="7dp"
+        />
+
+    <Button
+        android:id="@+id/security_questions_button"
+        android:scaleType="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_account_settings_btn"
+        android:background="@drawable/button_bg"
+        android:text="Set Security Questions"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"
+        android:elevation="5dp"
+        android:translationZ="7dp"
+        />
+
+
+
+</RelativeLayout>

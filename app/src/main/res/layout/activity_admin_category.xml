@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminCategoryActivity">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-700dp"
+        android:src="@drawable/foodbg"
+        />
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Admin"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="12dp"
+        android:id="@+id/card_admin_dashboard"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/background_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+
+            android:background="@drawable/dashcard2"
+            >
+            <TextView
+                android:id="@+id/categories_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Users"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categories_title"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/baloo"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/categories_image"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_margin="12dp"
+        android:id="@+id/card_admin_dashboard2"
+        android:layout_below="@+id/card_admin_dashboard"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/background_gradient2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/dashcard1"
+            >
+            <TextView
+                android:id="@+id/categories_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Orders"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/numbers2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categories_title2"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/baloo"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/categories_image2"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@drawable/admin2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_margin="12dp"
+        android:id="@+id/card_admin_dashboard3"
+        android:layout_below="@+id/card_admin_dashboard2"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/background_gradient3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/dashcard3"
+            >
+            <TextView
+                android:id="@+id/categories_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Sales"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/numbers3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categories_title3"
+                android:layout_marginTop="29dp"
+                android:fontFamily="@font/baloo"
+                android:text="0"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/categories_image3"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@drawable/admin3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/admin_logout_button"
+        android:background="@drawable/button_bg"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_admin_dashboard3"
+
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/admin_bottom_menu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:elevation="10dp"
+
+       android:background="@drawable/bottom_menu"
+       app:menu="@menu/admin"
+       app:labelVisibilityMode="unlabeled"
+       app:itemIconSize="30dp"
+       app:itemIconTint="@drawable/item_selector"
+       app:itemRippleColor="@android:color/transparent"
+
+       />
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

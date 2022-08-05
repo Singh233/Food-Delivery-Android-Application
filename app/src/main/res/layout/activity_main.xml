@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finalbg"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="113dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="160dp"
+        app:lottie_autoPlay="true"
+
+        app:lottie_loop="false"
+        app:lottie_speed="0.150"
+
+        />
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/green_bar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+
+        android:layout_marginStart="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="green-progress.json"
+        app:lottie_loop="true"
+
+        app:lottie_speed="0.350"
+        app:lottie_repeatMode="reverse"
+
+
+        />
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/blue_bar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+
+        android:layout_marginStart="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="blue_progress.json"
+        app:lottie_loop="true"
+        app:lottie_speed="0.350"
+        app:lottie_repeatMode="reverse"
+
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/red_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="170dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="40871-progress-bar-red.json"
+
+        app:lottie_loop="true"
+        app:lottie_speed="0.350"
+        app:lottie_repeatMode="reverse"
+
+        />
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="64sp"
+        android:text="Welcome!"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-light"
+
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+
+        />
+
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="660dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:padding="5dp"
+        android:text="LOGIN / REGISTER"
+        android:fontFamily="sans-serif-condensed"
+
+        android:textStyle="bold"
+
+        android:elevation="35dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#272626"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_or"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_login_btn"
+        android:fontFamily="sans-serif-light"
+        android:text="or Continue using"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/google_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_or"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/google"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="11dp"
+/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="twitter.json"
+        app:lottie_autoPlay="true"
+        app:lottie_scale="0.3"
+        app:lottie_repeatCount="2"
+        android:layout_below="@+id/text_or"
+        android:layout_toEndOf="@+id/google_login"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="fb.json"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="2"
+        app:lottie_scale="0.3"
+        android:layout_below="@+id/text_or"
+        android:layout_toStartOf="@+id/google_login"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="11dp"
+
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginStart="165dp"
+        app:lottie_fileName="loading5.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+
+        />
+
+
+
+</RelativeLayout>
